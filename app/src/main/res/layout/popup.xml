@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="250dip"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Credentials"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter File name"
+        android:id="@+id/set_name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Password"
+        android:id="@+id/set_password"
+        android:inputType="textPassword"
+        android:maxLength="8"
+        />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/skip_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:textColor="#0000ff"
+        android:text="Skip"
+        android:layout_marginEnd="20dp"
+        />
+        <Button
+            android:id="@+id/set_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0000ff"
+            android:background="#ffffff"
+            android:text="Set"
+            android:layout_marginEnd="20dp"
+            />
+    </LinearLayout>
+</LinearLayout>

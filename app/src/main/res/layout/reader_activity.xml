@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="#bd000000"
+    >
+    <android.support.v7.widget.AppCompatImageButton
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/arrow_back"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/back_viewer"
+        />
+    <android.support.v7.widget.AppCompatImageButton
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/ic_print"
+        android:layout_gravity="end|center"
+        android:id="@+id/more_viewer"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dip"
+        android:layout_marginEnd="64dip"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:text="Sample.pcx"
+        android:id="@+id/file_name_viewer"
+        />
+</FrameLayout>
+    <WebView
+        android:id="@+id/viewer_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+</LinearLayout>
